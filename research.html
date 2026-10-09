@@ -55,37 +55,143 @@
         <section class="project">
           <span class="project-number">01</span>
           <h2>Geometric Hybrid Systems on Manifolds</h2>
+          <div class="project-description">
+            <p>Many mechanical and aerospace systems combine continuous motion with discrete events while evolving on curved spaces. This project develops a framework for modeling and analyzing these geometric hybrid systems directly on manifolds, without requiring an embedding in Euclidean space or a particular choice of coordinates or distance. It brings together conditions for the existence of solutions, geometric notions of stability, nonsmooth Lyapunov methods, and an invariance principle to study long-term behavior. Applications include hybrid attitude stabilization and a billiard ball moving and experiencing impacts on a Möbius band, illustrating how the framework respects both the system’s geometry and its hybrid dynamics.</p>
+          </div>
           <figure class="project-media">
             <figcaption class="animation-title">
               Billiard ball on the Möbius band
             </figcaption>
             <img src="media/mobius.gif" alt="Animation of motion on a Möbius band" loading="lazy">
           </figure>
+          <div class="project-publications">
+            <h3>Relevant publications</h3>
+            <ul>
+              <li>
+                <a class="publication-id" href="publications.html#publication-U1">[U1]</a>
+                <div>
+                  <h4>Geometric Hybrid Dynamical Systems: Part I-Modeling and Stability</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Daniel E. Ochoa, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · arXiv preprint arXiv:2609.17687 · Under review at IEEE Transactions on Automatic Control</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C7">[C7]</a>
+                <div>
+                  <h4>Geometric Hybrid Dynamical Systems on Intrinsic Manifolds: Part II–Hybrid Invariance Principle</h4>
+                  <p><strong>Piyush P Jirwankar</strong>, Daniel E Ochoa, Ricardo G Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2025</span> · 2025 IEEE 64th Conference on Decision and Control (CDC) · pp. 6599–6604</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C8">[C8]</a>
+                <div>
+                  <h4>Digital-twin-enabled multi-spacecraft on-orbit operations</h4>
+                  <p>Sebastian Henao-Garcia, Michael Kapteyn, Karen E Willcox, Marco Tezzele, Miguel Castroviejo-Fernandez, Taehyeun Kim, Michele Ambrosino, Ilya Kolmanovsky, Himadri Basu, <strong>Piyush P. Jirwankar</strong>, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2025</span> · AIAA SciTech 2025 Forum · pp. 1432</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C4">[C4]</a>
+                <div>
+                  <h4>Solution Sets of Geometric Hybrid Systems: Topological Properties and Existence of Extremal Solutions</h4>
+                  <p>Daniel E. Ochoa, <strong>Piyush P. Jirwankar</strong>, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · Proceedings of the 65th IEEE Conference on Decision and Control (CDC)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Project 02. Keep the GIF looping at its original (1x) speed. -->
         <section class="project">
           <span class="project-number">02</span>
           <h2>Safe Control Design for Geometric Hybrid Systems</h2>
+          <div class="project-description">
+            <p>This project develops safety tools for controlled hybrid systems whose states evolve on manifolds. Multiple control barrier functions describe a safe region, with conditions that keep trajectories inside it during both continuous motion and discrete jumps. These conditions guide the construction of pointwise optimal control laws and safety filters that modify a nominal controller to enforce safety while respecting the geometry of the state and input spaces. A bouncing pendulum demonstrates the approach: the filter adjusts the applied force and the impact response to keep the motion within a prescribed safe energy range.</p>
+          </div>
           <figure class="project-media">
+            <figcaption class="animation-title">
+              Pendulum control to keep energy within a specified range
+            </figcaption>
             <img
               src="media/pendulum.gif"
               alt="Pendulum safety control simulation playing at the original speed"
               loading="lazy"
             >
           </figure>
+          <div class="project-publications">
+            <h3>Relevant publications</h3>
+            <ul>
+              <li>
+                <a class="publication-id" href="publications.html#publication-U2">[U2]</a>
+                <div>
+                  <h4>Multiple Control Barrier Functions for Geometric Hybrid Systems: Modeling and Safe Control Synthesis</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Daniel E. Ochoa, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · Under review at Springer MCSS</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C3">[C3]</a>
+                <div>
+                  <h4>Sufficient Conditions for Set Invariance Using Multiple Barrier Functions in Geometric Hybrid Dynamical Systems</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Daniel E. Ochoa, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · Proceedings of the 65th IEEE Conference on Decision and Control (CDC)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <!-- Project 03. -->
+        <!-- Project 03. Video is encoded at 3.5x speed and loops without controls. -->
         <section class="project">
           <span class="project-number">03</span>
           <h2>Model Predictive Control for Hybrid Dynamical Systems</h2>
+          <div class="project-description">
+            <p>This research explores model predictive control for systems that combine continuous evolution with discrete events, focusing on constrained decision-making and reliable operation under disturbances. Applications include spacecraft rendezvous and docking, where a controller must coordinate approach, contact, and subsequent stabilization of the joined spacecraft. The broader aim is to connect hybrid system models with predictive control for complex, multi-phase operations.</p>
+          </div>
+          <figure class="project-media">
+            <figcaption class="animation-title">Thermostat control using hybrid MPC</figcaption>
+            <video autoplay muted loop playsinline aria-label="Thermostat model predictive control animation playing at 3.5 times the original speed">
+              <source src="media/thermostat-3.5x.mp4?v=plot-borders-3" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+          </figure>
+          <div class="project-publications">
+            <h3>Relevant publications</h3>
+            <ul>
+              <li>
+                <a class="publication-id" href="publications.html#publication-U3">[U3]</a>
+                <div>
+                  <h4>Input-to-State Stability of Model Predictive Control for Discretized Hybrid Dynamical Systems</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Stefano Di Cairano, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · Under review at the American Control Conference (ACC)</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C2">[C2]</a>
+                <div>
+                  <h4>A Hybrid Model Predictive Control Framework for Docking and Stabilization of Composite Rigid Spacecraft Dynamics</h4>
+                  <p>Himadri Basu, <strong>Piyush P. Jirwankar</strong>, Ricardo G. Sanfelice, Miguel Castroviejo-Fernandez, Ilya Kolmanovsky</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · AIAA SCITECH 2026 Forum</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Project 04. Keep the GIF looping at half (0.5x) speed. -->
         <section class="project">
           <span class="project-number">04</span>
           <h2>Obstacle Avoidance Using the Eikonal Equation</h2>
+          <div class="project-description">
+            <p>This project connects motion planning with hybrid feedback control to guide a system toward a target while avoiding obstacles. The Eikonal equation constructs a potential that measures the shortest weighted path to the target through the obstacle-free space. Descending this potential guides motion toward the goal, while hybrid switching between suitable potentials addresses the challenges of achieving global convergence robustly in environments with obstacles.</p>
+            <p class="project-equation" role="math" aria-label="The norm of the gradient of u at x equals one over n of x, for x in the interior of the safe set outside the target. u of x equals zero on the target boundary.">
+              ‖∇u(x)‖ = 1/n(x), &nbsp; x ∈ int(X<sub>s</sub>) ∖ A;<br>
+              u(x) = 0, &nbsp; x ∈ ∂A.
+            </p>
+            <p>Here, <var>x</var> is the position or configuration, <var>X</var><sub>s</sub> is the obstacle-free set, and <var>A</var> is the target set; int(X<sub>s</sub>) denotes the interior of the safe set and ∂A the target boundary. The potential <var>u</var> is the weighted distance to the target, ∇u is its gradient, and ‖·‖ is the Euclidean norm. The positive function <var>n</var>(<var>x</var>) sets the local weighting: choosing n(x) = 1 gives ordinary shortest-path distance within the safe space. In a related robotic manipulator implementation, forward kinematics maps collisions into forbidden joint configurations, a fast sweeping method computes the potential, and gradient-based feedback guides a Quanser QArm through obstacle avoidance and pick-and-place tasks.</p>
+          </div>
           <figure class="project-media">
             <img
               src="media/eikonal.gif"
@@ -93,12 +199,28 @@
               loading="lazy"
             >
           </figure>
+          <div class="project-publications">
+            <h3>Relevant publications</h3>
+            <ul>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C1">[C1]</a>
+                <div>
+                  <h4>Hybrid Control for Robust and Global Obstacle Avoidance Via the Eikonal Equation</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Richard Montgomery, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2026</span> · Proceedings of the 65th IEEE Conference on Decision and Control (CDC)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Project 05. -->
         <section class="project">
           <span class="project-number">05</span>
           <h2>Global Attitude Estimation on SO(2) and SO(3)</h2>
+          <div class="project-description">
+            <p>Reliable orientation estimates are essential for feedback control in robotics and aerospace. This project develops hybrid complementary filters directly on SO(2) and SO(3), the spaces of planar and three-dimensional rotations, using noisy attitude and angular velocity measurements. Hysteresis-based switching combines filters that operate in different regions of the rotation space, overcoming the limitations of a single continuous filter while avoiding chattering. The SO(3) design uses Morse functions constructed on real projective space RP³ to shape the correction dynamics. Together, these designs provide global convergence in the absence of noise and input-to-state stability with respect to measurement noise, while preserving the geometry of rotation estimates.</p>
+          </div>
           <div class="project-plots">
             <figure>
               <img
@@ -110,6 +232,27 @@
             <figure>
               <img src="media/q.png" alt="Hybrid filter switching variable q versus time" loading="lazy">
             </figure>
+          </div>
+          <div class="project-publications">
+            <h3>Relevant publications</h3>
+            <ul>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C9">[C9]</a>
+                <div>
+                  <h4>Robust Global Hybrid Passive Complementary Filter on SO(2)</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2024</span> · 2024 IEEE 63rd Conference on Decision and Control (CDC) · pp. 7946-7951</p>
+                </div>
+              </li>
+              <li>
+                <a class="publication-id" href="publications.html#publication-C5">[C5]</a>
+                <div>
+                  <h4>A Robust and Global Hybrid Complementary Filter on SO(3) using Morse Functions on RP3</h4>
+                  <p><strong>Piyush P. Jirwankar</strong>, Richard Montgomery, Ricardo G. Sanfelice</p>
+                  <p class="metadata"><span class="publication-year">2025</span> · 2025 American Control Conference (ACC) · pp. 4473-4478</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
