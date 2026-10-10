@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 420" fill="none">
+  <title>Hybrid Möbius ribbon</title>
+  <desc>An oval teal and white ribbon with a half twist and a narrow break suggesting a discrete jump within continuous flow.</desc>
+  <!-- Broad back surface, ending at the first edge of the jump. -->
+  <path d="M322 17C190 17 29 65 10 140C0 177 27 219 56 245C72 179 173 127 294 97Z" fill="#61d5cb"/>
+  <!-- The second edge is offset to keep the jump visible at header size. -->
+  <path d="M347 33C480 61 555 109 550 188C548 225 540 264 523 291C541 256 508 219 482 200C445 163 393 133 317 111Z" fill="#f5f7f6"/>
+  <!-- Two complementary faces meet along the sweeping half twist. -->
+  <path d="M482 200C508 219 541 256 523 291C478 391 237 420 100 360C200 384 376 290 482 200Z" fill="#61d5cb"/>
+  <path d="M10 140C-4 186-4 288 47 333C60 344 80 354 100 360C200 384 376 290 482 200C361 296 169 330 56 245C27 219 0 177 10 140Z" fill="#f5f7f6"/>
+</svg>
