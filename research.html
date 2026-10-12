@@ -84,14 +84,6 @@
                 </div>
               </li>
               <li>
-                <a class="publication-id" href="publications.html#publication-C8">[C8]</a>
-                <div>
-                  <h4>Digital-twin-enabled multi-spacecraft on-orbit operations</h4>
-                  <p>Sebastian Henao-Garcia, Michael Kapteyn, Karen E Willcox, Marco Tezzele, Miguel Castroviejo-Fernandez, Taehyeun Kim, Michele Ambrosino, Ilya Kolmanovsky, Himadri Basu, <strong>Piyush P. Jirwankar</strong>, Ricardo G. Sanfelice</p>
-                  <p class="metadata"><span class="publication-year">2025</span> · AIAA SciTech 2025 Forum · pp. 1432</p>
-                </div>
-              </li>
-              <li>
                 <a class="publication-id" href="publications.html#publication-C4">[C4]</a>
                 <div>
                   <h4>Solution Sets of Geometric Hybrid Systems: Topological Properties and Existence of Extremal Solutions</h4>
@@ -185,12 +177,12 @@
           <span class="project-number">04</span>
           <h2>Obstacle Avoidance Using the Eikonal Equation</h2>
           <div class="project-description">
-            <p>This project connects motion planning with hybrid feedback control to guide a system toward a target while avoiding obstacles. The Eikonal equation constructs a potential that measures the shortest weighted path to the target through the obstacle-free space. Descending this potential guides motion toward the goal, while hybrid switching between suitable potentials addresses the challenges of achieving global convergence robustly in environments with obstacles.</p>
+            <p>This project connects motion planning with hybrid feedback control to guide a system toward a target while avoiding obstacles. The Eikonal equation constructs a potential that measures the shortest weighted path to the target through the obstacle-free space. Descending this potential guides motion toward the goal, while hybrid switching between suitable potentials addresses the challenges of achieving global convergence robustly in environments with obstacles. The Eikonal equation is denoted by</p>
             <p class="project-equation" role="math" aria-label="The norm of the gradient of u at x equals one over n of x, for x in the interior of the safe set outside the target. u of x equals zero on the target boundary.">
               ‖∇u(x)‖ = 1/n(x), &nbsp; x ∈ int(X<sub>s</sub>) ∖ A;<br>
               u(x) = 0, &nbsp; x ∈ ∂A.
             </p>
-            <p>Here, <var>x</var> is the position or configuration, <var>X</var><sub>s</sub> is the obstacle-free set, and <var>A</var> is the target set; int(X<sub>s</sub>) denotes the interior of the safe set and ∂A the target boundary. The potential <var>u</var> is the weighted distance to the target, ∇u is its gradient, and ‖·‖ is the Euclidean norm. The positive function <var>n</var>(<var>x</var>) sets the local weighting: choosing n(x) = 1 gives ordinary shortest-path distance within the safe space. In a related robotic manipulator implementation, forward kinematics maps collisions into forbidden joint configurations, a fast sweeping method computes the potential, and gradient-based feedback guides a Quanser QArm through obstacle avoidance and pick-and-place tasks.</p>
+            <p>where <var>x</var> denotes the position or configuration, <var>X</var><sub>s</sub> is the obstacle-free (safe) set, and <var>A</var> is the target set. The potential <var>u</var> is the weighted distance to the target, ∇u is its gradient, and ‖·‖ is the Euclidean norm. The positive function <var>n</var>(<var>x</var>) sets the local weighting: choosing n(x) = 1 gives ordinary shortest-path distance within the safe space. In a related robotic manipulator implementation, forward kinematics maps collisions into forbidden joint configurations, a fast sweeping method computes the potential, and gradient-based feedback guides a Quanser QArm through obstacle avoidance and pick-and-place tasks.</p>
           </div>
           <figure class="project-media">
             <img
