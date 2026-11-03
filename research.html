@@ -172,7 +172,7 @@
           </div>
         </section>
 
-        <!-- Project 04. Keep the GIF looping at half (0.5x) speed. -->
+        <!-- Project 04. Robotic manipulator: 1.5x; point-mass dynamics: 0.5x. -->
         <section class="project">
           <span class="project-number">04</span>
           <h2>Obstacle Avoidance Using the Eikonal Equation</h2>
@@ -185,6 +185,19 @@
             <p>where <var>x</var> denotes the position or configuration, <var>X</var><sub>s</sub> is the obstacle-free (safe) set, and <var>A</var> is the target set. The potential <var>u</var> is the weighted distance to the target, ∇u is its gradient, and ‖·‖ is the Euclidean norm. The positive function <var>n</var>(<var>x</var>) sets the local weighting: choosing n(x) = 1 gives ordinary shortest-path distance within the safe space. In a related robotic manipulator implementation, forward kinematics maps collisions into forbidden joint configurations, a fast sweeping method computes the potential, and gradient-based feedback guides a Quanser QArm through obstacle avoidance and pick-and-place tasks.</p>
           </div>
           <figure class="project-media">
+            <figcaption class="animation-title">
+              Implementation on a robotic manipulator
+            </figcaption>
+            <img
+              src="media/robot_torus.gif"
+              alt="Robotic manipulator obstacle avoidance animation playing at 1.5x speed"
+              loading="lazy"
+            >
+          </figure>
+          <figure class="project-media">
+            <figcaption class="animation-title">
+              Implementation on point-mass dynamics
+            </figcaption>
             <img
               src="media/eikonal.gif"
               alt="Eikonal obstacle avoidance simulation playing at half speed"
