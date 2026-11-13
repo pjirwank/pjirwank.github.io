@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pjirwank.github.io/sitemap.xml
